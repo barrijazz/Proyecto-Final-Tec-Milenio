@@ -4,181 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-        crossorigin="anonymous">
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Renta de Oficinas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script rel="javascript" src="js/app.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script> -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="img/logo-red.png" alt="Logo">
-
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acarca de nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-shopping-cart"></a>
-            </ul>
-
-        </nav>
-    </header>
-
-    <div class="hero">
-        <div class="title">
-            <h1 class="animate-blink white-border">Bienvenido a FS Business
-                Centers</h1>
-            <p style="background-color: rgba(27, 27, 27, 0.3); color: white;">
-                Nuestros espacios están diseñados para que puedas impulsar tu
-                negocio, <br>contamos con oficinas físicas, virtuales y salas de
-                juntas</p>
-        </div>
-    </div>
-
-    <div class="cards-contenedor">
-        <div class="card" type="button" class="btn btn-secondary"
-            data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-title="Da click para ver en grande">
-            <img src="img/officina.JPG" alt="Image 3" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop">
-            <h3>Oficina Equipada</h3>
-            <p>Esta oficina cuenta con los espacios necesarios para que tengas
-                un trabajo confortable.</p>
-            <button class="fa fa-shopping-cart"> Añadir al carrito </button>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                            Oficina Equipada</h1>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="cabecero">
+        <div class="presupuesto">
+            <div class="presupuesto_titulo">
+                <p>Presupuesto Disponible</p>
+            </div>
+            <div id=presupuesto class="presupuesto_valor">
+                <p>+2,000.00</p>
+            </div>
+            <div class="presupuesto_ingreso limpiarEstilos">
+                <div class="presupuesto_ingreso--texto">
+                    <p>Ingresos</p>
+                </div>
+                <div class="derecha">
+                    <div id="ingresos" class="presupuesto_ingreso--valor">
+                        <p>+4,000.00.</p>
                     </div>
-                    <div class="modal-body">
-                        <img src="img/officina.JPG" width="100%" alt="Image 3"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop" width="400px">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+                    <div class="presupuesto_ingreso--porcentaje"> </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card" type="button" class="btn btn-secondary"
-            data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-title="Da click para ver en grande">
-            <img src="img/fsbc-img-5.jpeg" alt="Image 3" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop-2">
-            <h3>Oficina Física</h3>
-            <p>Esta oficina mantiene todas las comodidades, también contamos con salas de juntas.</p>
-            <button class="fa fa-shopping-cart"> Añadir al carrito </button>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                            Oficina Física</h1>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/fsbc-img-5.jpeg" width="100%"
-                            alt="Image 3" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop" width="400px">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" type="button" class="btn btn-secondary"
-            data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-title="Da click para ver en grande">
-            <img src="img/fsbc-img-1.JPG" alt="Image 3" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop-3">
-            <h3>Coworking</h3>
-            <p>Nuestros espacios de coworking ayudan a la nueva modalidad de trabajo, no dudes en preguntar.</p>
-            <button class="fa fa-shopping-cart"> Añadir al carrito </button>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                            Coworking</h1>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/fsbc-img-1.JPG" width="100%" alt="Image 3"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop" width="400px">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <div class="presupuesto_egreso limpiarEstilos">
+                <div class="presupuesto_egreso--texto">Egresos</div>
+                <div class="derecha limpiarEstilos">
+                    <div class="presupuesto_egreso--valor">–1,900.00</div>
+                    <div class="presupuesto_egreso--porcentaje">45 %</div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-col">
-            <div class="footer-columna">
-                <img src="img/logo-red.png" alt="Your Logo" class="footer-logo">
-            </div>
-            <div class="footer-columna">
-                <p><a href="#">Nosotros</a></p>
-                <p><a href="#">Historia</a></p>
-                <p><a href="#">Contacto</a></p>
-            </div>
-            <div class="footer-columna">
-                <ul>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </ul>
-                <p class="texto-columna">FS BUSINESS CENTERS </p>
+    <form id="forma" onsubmit="return false">
+        <div class="agregar">
+            <div class="agregar_contenedor">
+                <select class="agregar_tipo" id="tipo">
+                    <option value="Ingreso" selected>+</option>
+                    <option value="Egreso">-</option>
+                </select>
+                <input type="text" class="agregar_descripcion" id="descripcion"
+                    value="Agregar Descripcion">
+                <input type="number" class="agregar_valor" placeholder="Valor"
+                    id="Valor" step="any">
+                <!-- <input>-->
+                <button onclick="AgregarP()" class="agregar_btn" >
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
             </div>
         </div>
-    </footer>
+    </form>
+    <div class="contenedor limpiarEstilos">
+        <div class="ingreso">
+            <h2 class="ingreso_titulo">INGRESOS</h2>
+            <div id="lista-ingresos" class="contenedoringreso">
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        <p>Salario</p>
+                    </div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">
+                            <p>+2,200.00</p>
+                        </div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar--btn"> 
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        <p>Venta Coche</p>
+                    </div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">
+                            <p>+1,500.00</p>
+                        </div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar--btn"> 
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="egreso">
+            <h2 class="egreso_titulo">EGRESOS</h2>
+            <div id="lista-egresos">
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        <p>Renta departamento</p>
+                    </div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">
+                            <p>-900</p>
+                        </div>
+                        <div class="elemento_porcentaje">21%</div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar--btn"> 
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        <p>Ropa</p>
+                    </div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">
+                            <p>-400.00</p>
+                        </div>
+                        <div class="elemento_porcentaje">9%</div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar--btn"> 
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>    
+            </div>
+        </div>
+    </div>
 </body>
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-
-</html>
-
 </html>
